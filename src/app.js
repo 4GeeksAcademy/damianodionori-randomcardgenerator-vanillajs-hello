@@ -7,6 +7,11 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   generateRandomCard();
+
+  const generateButton = document.getElementById("generateButton");
+  generateButton.addEventListener("click", generateRandomCard);
+
+  const cardTimer = setInterval(generateRandomCard, 10000);
 };
 
 function generateRandomCard() {

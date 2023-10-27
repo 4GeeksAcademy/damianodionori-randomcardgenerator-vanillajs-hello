@@ -10,6 +10,13 @@ body {
   padding: 0;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .card {
   width: 300px;
   height: 480px;
@@ -50,10 +57,10 @@ body {
 
 .hearts,
 .diamonds {
-  color: red; /* Set color to red for hearts and diamonds */
+  color: red;
 }
 
 .spades,
 .clubs {
-  color: black; /* Set color to black for spades and clubs */
+  color: black;
 }
