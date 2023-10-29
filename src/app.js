@@ -35,7 +35,7 @@ function generateRandomCard() {
   const randomSuitIndex = Math.floor(Math.random() * suits.length);
   const randomValueIndex = Math.floor(Math.random() * cardValues.length);
 
-  const cardDiv = document.getElementById("card");
+  const cardDiv = document.querySelector(".card");
   cardDiv.classList = "card " + suits[randomSuitIndex];
 
   const suitSymbol = getSuitSymbol(suits[randomSuitIndex]);
