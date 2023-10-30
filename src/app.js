@@ -48,6 +48,12 @@ function generateRandomCard() {
   topLeft.textContent = suitSymbol;
   bottomRight.textContent = suitSymbol;
   value.textContent = cardValue;
+
+  const widthInput = document.getElementById("widthInput");
+  const heightInput = document.getElementById("heightInput");
+
+  cardDiv.style.width = widthInput.value + "px";
+  cardDiv.style.height = heightInput.value + "px";
 }
 
 function getSuitSymbol(suit) {
